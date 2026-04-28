@@ -25,28 +25,36 @@
         android:layout_marginTop="80dp"
         android:text="@string/titulo_bienvenida"
         android:textColor="#FFFFFF"
-        android:textSize="40sp"
+        android:textSize="45sp"
         android:textStyle="bold"
         android:shadowColor="#000000"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="2"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
 
     <Button
         android:id="@+id/buttonEnter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:backgroundTint="#4DFFFFFF"
+        android:paddingHorizontal="60dp"
+        android:paddingVertical="15dp"
         android:text="@string/boton_entrar"
         android:textColor="#FFFFFF"
-        android:backgroundTint="#4DFFFFFF"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/guidelineMiddle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewWelcome" />
+        app:layout_constraintTop_toTopOf="@+id/guidelineMiddle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
